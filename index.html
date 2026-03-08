@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hikmaa Sagalee</title>
+</head>
+<body>
+
+<h1>Hikmaa Sagalee</h1>
+
+<input type="text" id="roomName" placeholder="Room maqaa barreessi">
+<button onclick="createRoom()">Room Uumi</button>
+<button onclick="joinRoom()">Room Seeni</button>
+
+<button onclick="voice()">Voice Room</button>
+<button onclick="video()">Video Call</button>
+<button onclick="chat()">Chat</button>
+
+<script>
+function createRoom(){
+  const room = document.getElementById("roomName").value;
+  if(room) alert("Room tolchite: " + room);
+  else alert("Room maqaa barreessi!");
+}
+
+function joinRoom(){
+  const room = document.getElementById("roomName").value;
+  if(room) alert("Room seente: " + room);
+  else alert("Room maqaa barreessi!");
+}
+
+function voice(){ alert("Voice room jalqabame"); }
+function video(){ alert("Video call jalqabame"); }
+function chat(){ alert("Chat jalqabame"); }
+</script>
+
+</body>
+</html>
